@@ -1,0 +1,41 @@
+{% extends "header.html" %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/forms.css') }}">
+    <script src="{{ url_for('static', filename='js/radio_choose_inform_function.js') }}"></script>
+</head>
+<body onload="inform_function()">
+    <form class="main-form" action="/validate_function_modeling">
+
+        <div>
+            <input id="radio_benchmark" type="radio" name="type_function" value="benchmark" onchange="inform_function()" checked="checked">
+            <label>BENCHMARK</label>
+            <input id="radio_modeling" type="radio" name="type_function" value="modeling" onchange="inform_function()">
+            <label>MODELING</label>
+        </div>
+        <hr>
+
+        <div>
+            <div id="benchmark-panel">
+                <div id="func-list">
+                    <label>FUNCTIONS</label>
+                    <select name="function_selected">
+                        <option disabled selected value> - select an option - </option>
+                        {% for id in function_names %}
+                            <option>{{id}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+
+            <div id="modeling-panel">
+                <textarea>
+                    Test
+                </textarea>
+            </div>
+        </div>
+
+        <input type="submit" name="submit_button" value="Next">
+    </form>
+</body>
+{% endblock %}

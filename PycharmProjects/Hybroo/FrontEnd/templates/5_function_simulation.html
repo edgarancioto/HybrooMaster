@@ -1,0 +1,193 @@
+{% extends "header.html" %}
+{% block content %}
+
+<body>
+    <div>
+        <img src="http://latex.codecogs.com/svg.latex?{{ function_info[8] }}" border="0"/>
+        <br><br>
+    </div>
+
+    <div class="third">
+        <div>
+            <label>Functions Information</label>
+            <table>
+                <tr>
+                    <td>Function:</td>
+                    <td>{{ function_info[0] }}</td>
+                </tr>
+                <tr>
+                    <td>Dimensions:</td>
+                    <td>{{ function_info[2] }}</td>
+                </tr>
+                <tr>
+                    <td>Location:</td>
+                    <td>{{ function_info[4] }}</td>
+                </tr>
+                <tr>
+                    <td>Best:</td>
+                    <td>{{ function_info[5] }}</td>
+                </tr>
+                <tr>
+                    <td>Description:</td>
+                    <td>{{ function_info[7] }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <label>3-dimensional Plot</label>
+            <object data="{{ url_for('static', filename='image/results/function3d.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+        <div>
+            <label>Contour Plot</label>
+            <object data="{{ url_for('static', filename='image/results/function_contour.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+    </div>
+
+    {% if simulation_status == 'starting' %}
+
+    <div>
+        <label>Starting Simulation</label>
+    </div>
+    {% else %}
+
+        {% if simulation_status == 'finish' %}
+            {% set update_time = -1 %}
+
+    <div>
+        <p><label>Simulation Report</label></p>
+        <table class="statistics-table">
+            <thead>
+                <tr>
+                    <th>Statistics</th>
+                    <th>Times(s)</th>
+                    <th>Values</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Minimum</td>
+                    <td>{{  '%.2f'%minimum[0] }}</td>
+                    <td>{{  '%.2f'%minimum[1] }}</td>
+                </tr>
+                <tr>
+                    <td>First Quartile</td>
+                    <td>{{  '%.2f'%first_quartile[0] }}</td>
+                    <td>{{  '%.2f'%first_quartile[1] }}</td>
+                </tr>
+                <tr>
+                    <td>Median</td>
+                    <td>{{  '%.2f'%median[0] }}</td>
+                    <td>{{  '%.2f'%median[1] }}</td>
+                </tr>
+                <tr>
+                    <td>Third Quartile</td>
+                    <td>{{  '%.2f'%third_quartile[0] }}</td>
+                    <td>{{  '%.2f'%third_quartile[1] }}</td>
+                </tr>
+                <tr>
+                    <td>Maximum</td>
+                    <td>{{  '%.2f'%maximum[0] }}</td>
+                    <td>{{  '%.2f'%maximum[1] }}</td>
+                </tr>
+                <tr>
+                    <td>Mean</td>
+                    <td>{{  '%.2f'%mean[0] }}</td>
+                    <td>{{  '%.2f'%mean[1] }}</td>
+                </tr>
+                <tr>
+                    <td>Standard Deviation</td>
+                    <td>{{  '%.2f'%std[0] }}</td>
+                    <td>{{  '%.2f'%std[1] }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="half">
+        <div>
+            <p><label>Boxplot of Times</label></p>
+            <object data="{{ url_for('static', filename='image/results/times-boxplot.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+        <div>
+            <p><label>Boxplot of Costs</label></p>
+            <object data="{{ url_for('static', filename='image/results/values-boxplot.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+    </div>
+
+    <div>
+        <p><label>Scatter of Costs x Times</label></p>
+        <object data="{{ url_for('static', filename='image/results/scatter.png') }}" type="image/png">
+            <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+        </object>
+    </div>
+
+    <div>
+        <p><label>Data of Simulation</label></p>
+        <div class="scroll">
+            <table class="statistics-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Times(s)</th>
+                        <th>Values</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for i in values %}
+                    <tr>
+                        <td>{{  loop.index }}</td>
+                        <td>{{  '%.2f'%times[loop.index-1] }}</td>
+                        <td>{{  '%.2f'%i }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="half">
+        <div>
+            <p><label>Best Solution</label></p>
+            <object data="{{ url_for('static', filename='image/results/err_1-simulation-1.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+
+        <div>
+            <p><label>Second Best Solution</label></p>
+            <object data="{{ url_for('static', filename='image/results/err_1-simulation-2.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+    </div>
+
+        {% else %}
+            {% if simulation_status|length > 0 %}
+            <div>
+                <p><label>{{ simulation_status[0][0] }} = {{ simulation_status[0][1] }}</label></p>
+                <p><label>{{ simulation_status[1][0] }} = {{ simulation_status[1][1] }}</label></p>
+                <p><label>{{ simulation_status[2][0] }} = {{ '%.2f'%simulation_status[2][1]|float }}</label></p>
+                <p><label>{{ simulation_status[3][0] }} = {{ '%.1f'%simulation_status[3][1]|float }}</label></p>
+                <progress value='{{ (simulation_status[1][1]|int/simulation_status[0][1]|int)*100 }}' max="100"></progress>
+            </div>
+            {% else %}
+            <p><label>Calculating</label></p>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+</body>
+
+<head>
+    <meta http-equiv="refresh" content="{{ update_time }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/results.css') }}">
+</head>
+{% endblock %}

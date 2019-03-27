@@ -1,0 +1,114 @@
+{% extends "header.html" %}
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/results.css') }}">
+
+<body>
+    <div class="third">
+        <div>
+            <label>Instance Information</label>
+            <table>
+                <tr>
+                    <td>Instance:</td>
+                    <td>{{ instance }}</td>
+                </tr>
+                <tr>
+                    <td>Number of Points:</td>
+                    <td>{{ instance_info[0] }}</td>
+                </tr>
+                <tr>
+                    <td>Optimal:</td>
+                    <td>{{ instance_info[1] }}</td>
+                </tr>
+                <tr>
+                    <td>Benchmark:</td>
+                    <td>{{ instance_info[2] }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <label>Coordinates of Points</label>
+            <object data="{{ url_for('static', filename='image/coord/'+instance.replace('.tsp','')+'-coords.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+
+        <div>
+            <p>Optimal Solution</p>
+            <object data="{{ url_for('static', filename='image/Best Know/'+instance.replace('.tsp','')+'-best.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+    </div>
+
+    {% if type_of_method=='hybrid' %}
+    <div>
+        <label>The Hybrid Solution</label>
+    </div>
+
+    <div class="half">
+        <div>
+            <p><label>{{ method_selected[0] }}</label></p>
+            <p><label>Best Solution: {{ '%.3f'%costs[0] }}({{ '%.2f'%(instance_info[1]|float/costs[0]*100) }}%) solved in {{ '%.3f'%times[0] }} seconds</label></p>
+            <object data="{{ url_for('static', filename='image/results/path1.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+            <object data="{{ url_for('static', filename='image/results/err_1.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+
+        <div>
+            <p><label>{{ method_selected[1] }}</label></p>
+            <p><label>Best Solution: {{ '%.3f'%costs[1] }}({{ '%.2f'%(instance_info[1]|float/costs[1]*100) }}%) solved in {{ '%.3f'%times[1] }} seconds</label></p>
+            <object data="{{ url_for('static', filename='image/results/path2.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+            <object data="{{ url_for('static', filename='image/results/err_2.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+    </div>
+
+    <div>
+        <label>Analysis of Hybridization</label>
+        <p><label>
+                    The {{ method_selected[0] }} hit {{ '%.2f'%(instance_info[1]|float/costs[0]*100) }}% of optimal value of problem in {{ '%.3f'%times[0] }} seconds.
+                    Starting on the best found value, the {{ method_selected[1] }}
+                    {% if costs[0]-costs[1] > 0.1 %}
+                    got a improve {{ '%.2f'%((instance_info[1]|float/(costs[1])*100)-(instance_info[1]|float/(costs[0])*100)) }}% of solution, in {{ '%.3f'%times[1] }} seconds.
+                    Hybridization reached a value of {{ '%.3f'%costs[1] }}, corresponding a {{ '%.2f'%(instance_info[1]|float/costs[1]*100) }}% of optimal value,
+                    in a total of {{ '%.3f'%(times[0]+times[1]) }} seconds, considered a effective result, because one method support the other.
+                    {% else %}
+                        remained in the same. Hybridization, in this case, was consider unnecessary, because one method not support the other.
+                    {% endif %}
+        </label></p>
+    </div>
+
+    <div>
+        <br><br>
+        <object data="{{ url_for('static', filename='image/results/result_err_hybrid.png') }}" type="image/png">
+            <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+        </object>
+    </div>
+
+    {% else %}
+    <div>
+        <label>The Single Solution - {{ method_selected }}</label>
+    </div>
+    <div>
+        <p><label>Best Solution: {{ '%.3f'%costs }}({{ '%.2f'%(instance_info[1]|float/costs*100) }}%) solved in {{ '%.3f'%times }} seconds</label></p>
+        <object data="{{ url_for('static', filename='image/results/path1.png') }}" type="image/png">
+            <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+        </object>
+    </div>
+    <div>
+        <object data="{{ url_for('static', filename='image/results/err_1.png') }}" type="image/png">
+            <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+        </object>
+    </div>
+    {% endif %}
+
+</body>
+{% endblock %}

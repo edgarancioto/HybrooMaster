@@ -1,0 +1,21 @@
+.main-form{
+    padding-top:10px;
+    margin: auto;
+    width:70%;
+}
+.simulation-times{
+    float:right;
+}
+.img-function{
+    width: 100%;
+    text-align:center;
+}
+.img-function img{
+    padding:5px;
+    height: 75px;
+    width:1000px;
+}
+.function-info{
+    text-align:left;
+    font-size:28px;
+}

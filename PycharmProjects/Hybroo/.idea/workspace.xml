@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="467e751a-67f7-4421-80b6-c58d342bf4f8" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Hybroo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>method_selected_1</find>
+      <find>parameters_1</find>
+      <find>method_selecteds</find>
+      <find>time</find>
+      <find>take_parameters</find>
+      <find>method_selected</find>
+      <find>label</find>
+      <find>radios-problem</find>
+      <find>lists</find>
+      <find>class</find>
+      <find>img-function</find>
+      <find>49</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>parameters</replace>
+      <replace>method_selected</replace>
+      <replace>times</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/FrontEnd/templates/results.html" />
+        <option value="$PROJECT_DIR$/BackEnd/InstanceProblem/CVRP/_INSTANCE.py" />
+        <option value="$PROJECT_DIR$/FrontEnd/static/css/results_vrp.css" />
+        <option value="$PROJECT_DIR$/BackEnd/InstanceProblem/INSTANCE.py" />
+        <option value="$PROJECT_DIR$/BackEnd/InstanceProblem/CVRP/_GA.py" />
+        <option value="$PROJECT_DIR$/BackEnd/InstanceProblem/CVRP/_SA.py" />
+        <option value="$PROJECT_DIR$/BackEnd/InstanceProblem/CVRP/_ACO.py" />
+        <option value="$PROJECT_DIR$/BackEnd/InstanceProblem/TSP/_ACO.py" />
+        <option value="$PROJECT_DIR$/BackEnd/InstanceProblem/TSP/execute_tsp.py" />
+        <option value="$PROJECT_DIR$/BackEnd/InstanceProblem/TSP/_GA.py" />
+        <option value="$PROJECT_DIR$/BackEnd/InstanceProblem/CVRP/execute_vrp.py" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/waiting.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/results_simulation.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/static/files/simulation-status.txt" />
+        <option value="$PROJECT_DIR$/FrontEnd/static/js/validate_form.js" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/index.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/static/css/functions.css" />
+        <option value="$PROJECT_DIR$/FrontEnd/static/css/instances.css" />
+        <option value="$PROJECT_DIR$/FrontEnd/static/js/radio_choose.js" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/results_function.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/static/js/radio_choose_inform_function.js" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/function_modeling.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/function_detail.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/functions.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/function_methods.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/static/js/validate_function_methods.js" />
+        <option value="$PROJECT_DIR$/BackEnd/FunctionProblem/FUNCTION.py" />
+        <option value="$PROJECT_DIR$/BackEnd/FunctionProblem/execute_function.py" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/simulation_functions.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/1_function_modeling.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/results_tsp.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/results_vrp.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/5_function_simulation.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/simulation.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/static/css/results.css" />
+        <option value="$PROJECT_DIR$/FrontEnd/static/css/forms.css" />
+        <option value="$PROJECT_DIR$/FrontEnd/static/css/header.css" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/header.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/4_function_results.html" />
+        <option value="$PROJECT_DIR$/BackEnd/FunctionProblem/Functions/functions.txt" />
+        <option value="$PROJECT_DIR$/BackEnd/InstanceProblem/Instances/dantzig42.tsp" />
+        <option value="$PROJECT_DIR$/FrontEnd/static/files/instances-info.txt" />
+        <option value="$PROJECT_DIR$/BackEnd/FunctionProblem/_SA.py" />
+        <option value="$PROJECT_DIR$/BackEnd/InstanceProblem/TSP/_SA.py" />
+        <option value="$PROJECT_DIR$/BackEnd/FunctionProblem/_GA.py" />
+        <option value="$PROJECT_DIR$/FrontEnd/controller_frontend.py" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/2_function_detail.html" />
+        <option value="$PROJECT_DIR$/BackEnd/controller_backend.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/instances.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/templates/3_function_methods.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Hybroo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hybroo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hybroo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hybroo" type="462c0819:PsiDirectoryNode" />
+              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hybroo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hybroo" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hybroo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hybroo" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hybroo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hybroo" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hybroo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hybroo" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Hybroo" type="cbb8eebc:String" user="Hybroo" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Hybroo" type="cbb8eebc:String" user="Hybroo" />
+              <item name="FrontEnd" type="cbb8eebc:String" user="FrontEnd" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GenerateBestSolutionVRP" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\20171210400069\PycharmProjects\Hybroo\FrontEnd" />
+      <recent name="C:\Users\20171210400069\PycharmProjects\Hybroo\FrontEnd\static\image\coord" />
+      <recent name="C:\Users\20171210400069\PycharmProjects\Hybroo\FrontEnd\static\image\Best Know" />
+      <recent name="C:\Users\20171210400069\PycharmProjects\Hybroo\BackEnd\InstanceProblem\Instances" />
+      <recent name="C:\Users\20171210400069\PycharmProjects\Hybroo\BackEnd\InstanceProblem" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\20171210400069\PycharmProjects\Hybroo\FrontEnd\static\js" />
+      <recent name="C:\Users\20171210400069\PycharmProjects\Hybroo\FrontEnd\templates" />
+      <recent name="C:\Users\20171210400069\PycharmProjects\Hybroo\BackEnd\FunctionProblem" />
+      <recent name="C:\Users\20171210400069\PycharmProjects\Hybroo\BackEnd\FunctionProblem\Functions" />
+      <recent name="C:\Users\20171210400069\PycharmProjects\Hybroo\FrontEnd\static\image" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Hybroo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="467e751a-67f7-4421-80b6-c58d342bf4f8" name="Default" comment="" />
+      <created>1548091903317</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548091903317</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49782136" visible="true" weight="0.16385669" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.48474947" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.44989106" />
+      <window_info id="Structure" order="1" sideWeight="0.50217867" side_tool="true" weight="0.14436248" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
+      <window_info id="Favorites" order="2" sideWeight="0.5016129" side_tool="true" weight="0.14805058" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5446623" />
+      <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.32897604" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.39542484" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="80" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/BackEnd/FunctionProblem/_GA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="117" column="12" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/CVRP/_GA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="105" column="63" selection-start-line="105" selection-start-column="63" selection-end-line="105" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/FunctionProblem/_GA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1640">
+          <caret line="117" column="12" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/TSP/_SA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/TSP/_GA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3380">
+          <caret line="169" column="38" selection-start-line="169" selection-end-line="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/templates/5_function_simulation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="172" column="8" lean-forward="true" selection-start-line="172" selection-start-column="8" selection-end-line="186" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/templates/results_vrp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/templates/simulation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="238" selection-start-line="238" selection-end-line="238" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/static/css/results.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/templates/1_function_modeling.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/static/css/forms.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/static/css/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-423">
+          <caret line="781" column="8" selection-start-line="781" selection-start-column="8" selection-end-line="781" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/templates/4_function_results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/werkzeug/serving.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="711" column="54" selection-start-line="711" selection-start-column="47" selection-end-line="711" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/TSP/execute_tsp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/FunctionProblem/execute_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/FunctionProblem/FUNCTION.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/TestFiles/Genetic Algorithm+Simulated Annealing-Ackley Function/fitness_list.txt" />
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/Instances/d18512.tsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369857">
+          <caret line="6" selection-start-line="4" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/templates/results_tsp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="100" column="76" selection-start-line="100" selection-start-column="63" selection-end-line="100" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/Instances/dantzig42.tsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/CVRP/execute_vrp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/TestFiles/Simulated Annealing-Ackley Function.txt" />
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/INSTANCE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/TestFiles/Genetic Algorithm-Ackley Function.txt" />
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/CVRP/_SA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1053">
+          <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/CVRP/_ACO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/FunctionProblem/Functions/functions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="142" selection-start-column="142" selection-end-column="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/FunctionProblem/_SA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/TSP/_GA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/TSP/_ACO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/TSP/_SA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/InstanceProblem/CVRP/_GA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/FunctionProblem/_GA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="117" column="12" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/templates/2_function_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/controller_frontend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/templates/instances.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="149" column="72" selection-start-line="149" selection-start-column="72" selection-end-line="149" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/templates/3_function_methods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="43" column="85" selection-start-line="43" selection-start-column="85" selection-end-line="43" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/static/files/instances-info.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="199" column="14" selection-start-line="199" selection-start-column="14" selection-end-line="199" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/controller_backend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="506" selection-start-line="506" selection-end-line="506" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/static/files/simulation-status.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="2" column="939" selection-start-line="2" selection-start-column="939" selection-end-line="2" selection-end-column="939" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

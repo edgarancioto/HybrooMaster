@@ -1,0 +1,271 @@
+A-n32-k5.vrp:31;5;100;784;Set A (Augerat, 1995)
+A-n33-k5.vrp:32;5;100;661;Set A (Augerat, 1995)
+A-n33-k6.vrp:32;6;100;742;Set A (Augerat, 1995)
+A-n34-k5.vrp:33;5;100;778;Set A (Augerat, 1995)
+A-n36-k5.vrp:35;5;100;799;Set A (Augerat, 1995)
+A-n37-k5.vrp:36;5;100;669;Set A (Augerat, 1995)
+A-n37-k6.vrp:36;6;100;949;Set A (Augerat, 1995)
+A-n38-k5.vrp:37;5;100;730;Set A (Augerat, 1995)
+A-n39-k5.vrp:38;5;100;822;Set A (Augerat, 1995)
+A-n39-k6.vrp:38;6;100;831;Set A (Augerat, 1995)
+A-n44-k6.vrp:43;6;100;937;Set A (Augerat, 1995)
+A-n45-k6.vrp:44;6;100;944;Set A (Augerat, 1995)
+A-n45-k7.vrp:44;7;100;1146;Set A (Augerat, 1995)
+A-n46-k7.vrp:45;7;100;914;Set A (Augerat, 1995)
+A-n48-k7.vrp:47;7;100;1073;Set A (Augerat, 1995)
+A-n53-k7.vrp:52;7;100;1010;Set A (Augerat, 1995)
+A-n54-k7.vrp:53;7;100;1167;Set A (Augerat, 1995)
+A-n55-k9.vrp:54;9;100;1073;Set A (Augerat, 1995)
+A-n60-k9.vrp:59;9;100;1354;Set A (Augerat, 1995)
+A-n61-k9.vrp:60;9;100;1034;Set A (Augerat, 1995)
+A-n62-k8.vrp:61;8;100;1288;Set A (Augerat, 1995)
+A-n63-k9.vrp:62;9;100;1616;Set A (Augerat, 1995)
+A-n63-k10.vrp:62;10;100;1314;Set A (Augerat, 1995)
+A-n64-k9.vrp:63;9;100;1401;Set A (Augerat, 1995)
+A-n65-k9.vrp:64;9;100;1174;Set A (Augerat, 1995)
+A-n69-k9.vrp:68;9;100;1159;Set A (Augerat, 1995)
+A-n80-k10.vrp:79;10;100;1763;Set A (Augerat, 1995)
+B-n31-k5.vrp:30;5;100;672;Set B (Augerat, 1995)
+B-n34-k5.vrp:33;5;100;788;Set B (Augerat, 1995)
+B-n35-k5.vrp:34;5;100;955;Set B (Augerat, 1995)
+B-n38-k6.vrp:37;6;100;805;Set B (Augerat, 1995)
+B-n39-k5.vrp:38;5;100;549;Set B (Augerat, 1995)
+B-n41-k6.vrp:40;6;100;829;Set B (Augerat, 1995)
+B-n43-k6.vrp:42;6;100;742;Set B (Augerat, 1995)
+B-n44-k7.vrp:43;7;100;909;Set B (Augerat, 1995)
+B-n45-k5.vrp:44;5;100;751;Set B (Augerat, 1995)
+B-n45-k6.vrp:44;6;100;678;Set B (Augerat, 1995)
+B-n50-k7.vrp:49;7;100;741;Set B (Augerat, 1995)
+B-n50-k8.vrp:49;8;100;1312;Set B (Augerat, 1995)
+B-n51-k7.vrp:50;7;100;1032;Set B (Augerat, 1995)
+B-n52-k7.vrp:51;7;100;747;Set B (Augerat, 1995)
+B-n56-k7.vrp:55;7;100;707;Set B (Augerat, 1995)
+B-n57-k7.vrp:56;7;100;1153;Set B (Augerat, 1995)
+B-n57-k9.vrp:56;9;100;1598;Set B (Augerat, 1995)
+B-n63-k10.vrp:62;10;100;1496;Set B (Augerat, 1995)
+B-n64-k9.vrp:63;9;100;861;Set B (Augerat, 1995)
+B-n66-k9.vrp:65;9;100;1316;Set B (Augerat, 1995)
+B-n67-k10.vrp:66;10;100;1032;Set B (Augerat, 1995)
+B-n68-k9.vrp:67;9;100;1272;Set B (Augerat, 1995)
+B-n78-k10.vrp:77;10;100;1221;Set B (Augerat, 1995)
+E-n22-k4.vrp:21;4;6000;375;Set E (Christofides and Eilon, 1969)
+E-n23-k3.vrp:22;3;4500;569;Set E (Christofides and Eilon, 1969)
+E-n30-k3.vrp:29;3;4500;534;Set E (Christofides and Eilon, 1969)
+E-n33-k4.vrp:32;4;8000;835;Set E (Christofides and Eilon, 1969)
+E-n51-k5.vrp:50;5;160;521;Set E (Christofides and Eilon, 1969)
+E-n76-k7.vrp:75;7;220;682;Set E (Christofides and Eilon, 1969)
+E-n76-k8.vrp:75;8;180;735;Set E (Christofides and Eilon, 1969)
+E-n76-k10.vrp:75;10;140;830;Set E (Christofides and Eilon, 1969)
+E-n76-k14.vrp:75;14;100;1021;Set E (Christofides and Eilon, 1969)
+E-n101-k8.vrp:100;8;200;815;Set E (Christofides and Eilon, 1969)
+E-n101-k14.vrp:100;14;112;1067;Set E (Christofides and Eilon, 1969)
+F-n45-k4.vrp:44;4;2010;724;Set F (Fisher, 1994)
+F-n72-k4.vrp:71;4;30000;237;Set F (Fisher, 1994)
+F-n135-k7.vrp:134;7;2210;1162;Set F (Fisher, 1994)
+M-n101-k10.vrp:100;10;200;820;Set M (Christofides, Mingozzi and Toth, 1979)
+M-n121-k7.vrp:120;7;200;1034;Set M (Christofides, Mingozzi and Toth, 1979)
+M-n151-k12.vrp:150;12;200;1015;Set M (Christofides, Mingozzi and Toth, 1979)
+M-n200-k16.vrp:199;16;200;1274;Set M (Christofides, Mingozzi and Toth, 1979)
+M-n200-k17.vrp:199;17;200;1275;Set M (Christofides, Mingozzi and Toth, 1979)
+P-n16-k8.vrp:15;8;35;450;Set P (Augerat, 1995)
+P-n19-k2.vrp:18;2;160;212;Set P (Augerat, 1995)
+P-n20-k2.vrp:19;2;160;216;Set P (Augerat, 1995)
+P-n21-k2.vrp:20;2;160;211;Set P (Augerat, 1995)
+P-n22-k2.vrp:21;2;160;216;Set P (Augerat, 1995)
+P-n22-k8.vrp:21;8;3000;603;Set P (Augerat, 1995)
+P-n23-k8.vrp:22;8;40;529;Set P (Augerat, 1995)
+P-n40-k5.vrp:39;5;140;458;Set P (Augerat, 1995)
+P-n45-k5.vrp:44;5;150;510;Set P (Augerat, 1995)
+P-n50-k7.vrp:49;7;150;554;Set P (Augerat, 1995)
+P-n50-k8.vrp:49;8;120;631;Set P (Augerat, 1995)
+P-n50-k10.vrp:49;10;100;696;Set P (Augerat, 1995)
+P-n51-k10.vrp:50;10;80;741;Set P (Augerat, 1995)
+P-n55-k7.vrp:54;7;170;568;Set P (Augerat, 1995)
+P-n55-k8.vrp:54;8;160;588;Set P (Augerat, 1995)
+P-n55-k10.vrp:54;10;115;694;Set P (Augerat, 1995)
+P-n55-k15.vrp:54;15;70;989;Set P (Augerat, 1995)
+P-n60-k10.vrp:59;10;120;744;Set P (Augerat, 1995)
+P-n60-k15.vrp:59;15;80;968;Set P (Augerat, 1995)
+P-n65-k10.vrp:64;10;130;792;Set P (Augerat, 1995)
+P-n70-k10.vrp:69;10;135;827;Set P (Augerat, 1995)
+P-n76-k4.vrp:75;4;350;593;Set P (Augerat, 1995)
+P-n76-k5.vrp:75;5;280;627;Set P (Augerat, 1995)
+P-n101-k4.vrp:100;4;400;681;Set P (Augerat, 1995)
+X-n101-k25.vrp:100;25;206;27591;Uchoa et al. (2014)
+X-n106-k14.vrp:105;14;600;26362;Uchoa et al. (2014)
+X-n110-k13.vrp:109;13;66;14971;Uchoa et al. (2014)
+X-n115-k10.vrp:114;10;169;12747;Uchoa et al. (2014)
+X-n120-k6.vrp:119;6;21;13332;Uchoa et al. (2014)
+X-n125-k30.vrp:124;30;188;55539;Uchoa et al. (2014)
+X-n129-k18.vrp:128;18;39;28940;Uchoa et al. (2014)
+X-n134-k13.vrp:133;13;643;10916;Uchoa et al. (2014)
+X-n139-k10.vrp:138;10;106;13590;Uchoa et al. (2014)
+X-n143-k7.vrp:142;7;1190;15700;Uchoa et al. (2014)
+X-n148-k46.vrp:147;46;18;43448;Uchoa et al. (2014)
+X-n153-k22.vrp:152;22;144;21220;Uchoa et al. (2014)
+X-n157-k13.vrp:156;13;12;16876;Uchoa et al. (2014)
+X-n162-k11.vrp:161;11;1174;14138;Uchoa et al. (2014)
+X-n167-k10.vrp:166;10;133;20557;Uchoa et al. (2014)
+X-n172-k51.vrp:171;51;161;45607;Uchoa et al. (2014)
+X-n176-k26.vrp:175;26;142;47812;Uchoa et al. (2014)
+X-n181-k23.vrp:180;23;8;25569;Uchoa et al. (2014)
+X-n186-k15.vrp:185;15;974;24145;Uchoa et al. (2014)
+X-n190-k8.vrp:189;8;138;16980;Uchoa et al. (2014)
+X-n195-k51.vrp:194;51;181;44225;Uchoa et al. (2014)
+X-n200-k36.vrp:199;36;402;58578;Uchoa et al. (2014)
+X-n204-k19.vrp:203;19;836;19565;Uchoa et al. (2014)
+X-n209-k16.vrp:208;16;101;30656;Uchoa et al. (2014)
+X-n214-k11.vrp:213;11;944;10856;Uchoa et al. (2014)
+X-n219-k73.vrp:218;73;3;117595;Uchoa et al. (2014)
+X-n223-k34.vrp:222;34;37;40437;Uchoa et al. (2014)
+X-n228-k23.vrp:227;23;154;25742;Uchoa et al. (2014)
+X-n233-k16.vrp:232;16;631;19230;Uchoa et al. (2014)
+X-n237-k14.vrp:236;14;18;27042;Uchoa et al. (2014)
+X-n242-k48.vrp:241;48;28;82751;Uchoa et al. (2014)
+X-n247-k50.vrp:246;47;134;37274;Uchoa et al. (2014)
+X-n251-k28.vrp:250;28;69;38684;Uchoa et al. (2014)
+X-n256-k16.vrp:255;16;1225;18839;Uchoa et al. (2014)
+X-n261-k13.vrp:260;13;1081;26558;Uchoa et al. (2014)
+X-n266-k58.vrp:265;58;35;75478;Uchoa et al. (2014)
+X-n270-k35.vrp:269;35;585;35291;Uchoa et al. (2014)
+X-n275-k28.vrp:274;28;10;21245;Uchoa et al. (2014)
+X-n280-k17.vrp:279;17;192;33503;Uchoa et al. (2014)
+X-n284-k15.vrp:283;15;109;20226;Uchoa et al. (2014)
+X-n289-k60.vrp:288;60;267;95151;Uchoa et al. (2014)
+X-n294-k50.vrp:293;50;285;47161;Uchoa et al. (2014)
+X-n298-k31.vrp:297;31;55;34231;Uchoa et al. (2014)
+X-n303-k21.vrp:302;21;794;21744;Uchoa et al. (2014)
+X-n308-k13.vrp:307;13;246;25859;Uchoa et al. (2014)
+X-n313-k71.vrp:312;71;248;94044;Uchoa et al. (2014)
+X-n317-k53.vrp:316;53;6;78355;Uchoa et al. (2014)
+X-n322-k28.vrp:321;28;868;29834;Uchoa et al. (2014)
+X-n327-k20.vrp:326;20;128;27532;Uchoa et al. (2014)
+X-n331-k15.vrp:330;15;23;31102;Uchoa et al. (2014)
+X-n336-k84.vrp:335;84;203;139135;Uchoa et al. (2014)
+X-n344-k43.vrp:343;43;61;42056;Uchoa et al. (2014)
+X-n351-k40.vrp:350;40;436;25928;Uchoa et al. (2014)
+X-n359-k29.vrp:358;29;68;51505;Uchoa et al. (2014)
+X-n367-k17.vrp:366;17;218;22814;Uchoa et al. (2014)
+X-n376-k94.vrp:375;94;4;147713;Uchoa et al. (2014)
+X-n384-k52.vrp:383;52;564;65943;Uchoa et al. (2014)
+X-n393-k38.vrp:392;38;78;38260;Uchoa et al. (2014)
+X-n401-k29.vrp:400;29;745;66187;Uchoa et al. (2014)
+X-n411-k19.vrp:410;19;216;19718;Uchoa et al. (2014)
+X-n420-k130.vrp:419;130;18;107798;Uchoa et al. (2014)
+X-n429-k61.vrp:428;61;536;65483;Uchoa et al. (2014)
+X-n439-k37.vrp:438;37;12;36391;Uchoa et al. (2014)
+X-n449-k29.vrp:448;29;777;55269;Uchoa et al. (2014)
+X-n459-k26.vrp:458;26;1106;24145;Uchoa et al. (2014)
+X-n469-k138.vrp:468;138;256;221909;Uchoa et al. (2014)
+X-n480-k70.vrp:479;70;52;89458;Uchoa et al. (2014)
+X-n491-k59.vrp:490;59;428;66510;Uchoa et al. (2014)
+X-n502-k39.vrp:501;39;13;69230;Uchoa et al. (2014)
+X-n513-k21.vrp:512;21;142;24201;Uchoa et al. (2014)
+X-n524-k153.vrp:523;137;125;154593;Uchoa et al. (2014)
+X-n536-k96.vrp:535;96;371;94988;Uchoa et al. (2014)
+X-n548-k50.vrp:547;50;11;86701;Uchoa et al. (2014)
+X-n561-k42.vrp:560;42;74;42722;Uchoa et al. (2014)
+X-n573-k30.vrp:572;30;210;50717;Uchoa et al. (2014)
+X-n586-k159.vrp:585;159;28;190423;Uchoa et al. (2014)
+X-n599-k92.vrp:598;92;487;108489;Uchoa et al. (2014)
+X-n613-k62.vrp:612;62;523;59556;Uchoa et al. (2014)
+X-n627-k43.vrp:626;43;110;62210;Uchoa et al. (2014)
+X-n641-k35.vrp:640;35;1381;63737;Uchoa et al. (2014)
+X-n655-k131.vrp:654;131;5;106780;Uchoa et al. (2014)
+X-n670-k130.vrp:669;126;129;146476;Uchoa et al. (2014)
+X-n685-k75.vrp:684;75;408;68261;Uchoa et al. (2014)
+X-n701-k44.vrp:700;44;87;81934;Uchoa et al. (2014)
+X-n716-k35.vrp:715;35;1007;43414;Uchoa et al. (2014)
+X-n733-k159.vrp:732;159;25;136250;Uchoa et al. (2014)
+X-n749-k98.vrp:748;98;396;77365;Uchoa et al. (2014)
+X-n766-k71.vrp:765;71;166;114525;Uchoa et al. (2014)
+X-n783-k48.vrp:782;48;832;72445;Uchoa et al. (2014)
+X-n801-k40.vrp:800;40;20;73331;Uchoa et al. (2014)
+X-n819-k171.vrp:818;171;358;158265;Uchoa et al. (2014)
+X-n837-k142.vrp:836;142;44;193809;Uchoa et al. (2014)
+X-n856-k95.vrp:855;95;9;89002;Uchoa et al. (2014)
+X-n876-k59.vrp:875;59;764;99331;Uchoa et al. (2014)
+X-n895-k37.vrp:894;37;1816;53946;Uchoa et al. (2014)
+X-n916-k207.vrp:915;207;33;329247;Uchoa et al. (2014)
+X-n936-k151.vrp:935;151;138;132923;Uchoa et al. (2014)
+X-n957-k87.vrp:956;87;11;85478;Uchoa et al. (2014)
+X-n979-k58.vrp:978;58;998;119008;Uchoa et al. (2014)
+X-n1001-k43.vrp:1000;43;131;72402;Uchoa et al. (2014)
+a280.tsp:280;2579;TSPLIB
+berlin52.tsp:52;7542;TSPLIB
+bier127.tsp:127;118282;TSPLIB
+brd14051.tsp:14051;469385;TSPLIB
+ch130.tsp:130;6110;TSPLIB
+ch150.tsp:150;6528;TSPLIB
+dantzig42.tsp:42;679.2019;TSPLIB
+d198.tsp:198;15780;TSPLIB
+d493.tsp:493;35002;TSPLIB
+d657.tsp:657;48912;TSPLIB
+d1291.tsp:1291;50801;TSPLIB
+d1655.tsp:1655;62128;TSPLIB
+d2103.tsp:2103;80450;TSPLIB
+d15112.tsp:15112;1573084;TSPLIB
+d18512.tsp:18512;645238;TSPLIB
+eil51.tsp:51;426;TSPLIB
+eil76.tsp:76;538;TSPLIB
+eil101.tsp:101;629;TSPLIB
+fl417.tsp:417;11861;TSPLIB
+fl1400.tsp:1400;20127;TSPLIB
+fl1577.tsp:1577;22249;TSPLIB
+fl3795.tsp:3795;28772;TSPLIB
+fnl4461.tsp:4461;182566;TSPLIB
+gil262.tsp:262;2378;TSPLIB
+kroA100.tsp:100;21282;TSPLIB
+kroA150.tsp:150;26524;TSPLIB
+kroA200.tsp:200;29368;TSPLIB
+kroB100.tsp:100;22141;TSPLIB
+kroB150.tsp:150;26130;TSPLIB
+kroB200.tsp:200;29437;TSPLIB
+kroC100.tsp:100;20749;TSPLIB
+kroD100.tsp:100;21294;TSPLIB
+kroE100.tsp:100;22068;TSPLIB
+lin105.tsp:105;14379;TSPLIB
+lin318.tsp:318;42029;TSPLIB
+linhp318.tsp:318;41345;TSPLIB
+nrw1379.tsp:1379;56638;TSPLIB
+p654.tsp:654;34643;TSPLIB
+pcb442.tsp:442;50778;TSPLIB
+pcb1173.tsp:1173;56892;TSPLIB
+pcb3038.tsp:3038;137694;TSPLIB
+pr76.tsp:76;108159;TSPLIB
+pr107.tsp:107;44303;TSPLIB
+pr124.tsp:124;59030;TSPLIB
+pr136.tsp:136;96772;TSPLIB
+pr144.tsp:144;58537;TSPLIB
+pr152.tsp:152;73682;TSPLIB
+pr226.tsp:226;80369;TSPLIB
+pr264.tsp:264;49135;TSPLIB
+pr299.tsp:299;48191;TSPLIB
+pr439.tsp:439;107217;TSPLIB
+pr1002.tsp:1002;259045;TSPLIB
+pr2392.tsp:2392;378032;TSPLIB
+rat99.tsp:99;1211;TSPLIB
+rat195.tsp:195;2323;TSPLIB
+rat575.tsp:575;6773;TSPLIB
+rat783.tsp:783;8806;TSPLIB
+rd100.tsp:100;7910;TSPLIB
+rd400.tsp:400;15281;TSPLIB
+rl1304.tsp:1304;252948;TSPLIB
+rl1323.tsp:1323;270199;TSPLIB
+rl1889.tsp:1889;316536;TSPLIB
+rl5915.tsp:5915;565530;TSPLIB
+rl5934.tsp:5934;556045;TSPLIB
+rl11849.tsp:11849;923288;TSPLIB
+st70.tsp:70;675;TSPLIB
+ts225.tsp:225;126643;TSPLIB
+tsp225.tsp:225;3916;TSPLIB
+u159.tsp:159;42080;TSPLIB
+u574.tsp:574;36905;TSPLIB
+u724.tsp:724;41910;TSPLIB
+u1432.tsp:1432;152970;TSPLIB
+u1817.tsp:1817;57201;TSPLIB
+u2152.tsp:2152;64253;TSPLIB
+u2319.tsp:2319;234256;TSPLIB
+usa13509.tsp:13509;19982859;TSPLIB
+vm1084.tsp:1084;239297;TSPLIB
+vm1748.tsp:1748;336556;TSPLIB

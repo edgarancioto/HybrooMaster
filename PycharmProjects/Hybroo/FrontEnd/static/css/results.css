@@ -1,0 +1,30 @@
+img, object{
+    width:500px;
+}
+.fail {
+    width:200px;
+    height: auto;
+}
+.scroll{
+    height:300px;
+    overflow-y: scroll;
+}
+.statistics-table{
+    border-spacing: 0;
+    margin:auto;
+    width:700px;
+}
+.statistics-table th {
+    font-weight: normal;
+    background: #3D444E;
+    color:white;
+    text-align: center;
+}
+.statistics-table td {
+    border: 1px solid #b8bec7;
+    background: white;
+    color:#3D444E;
+    text-align: center;
+}
+
+

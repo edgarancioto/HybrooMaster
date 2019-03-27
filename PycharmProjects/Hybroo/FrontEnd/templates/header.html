@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+</head>
+<body>
+    <header class="navigator-bar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">HOME</a></li>
+            <li><a href="{{ url_for('function_modeling') }}">FUNCTIONS PROBLEMS</a></li>
+            <li><a href="{{ url_for('instances') }}">INSTANCE PROBLEMS</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert">
+                    {% for message in messages %}
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        {{ message }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div>
+        <br><br><br>
+    </div>
+    <footer>
+        <p>HYBROO - Optimization Environment</p>
+    </footer>
+</body>
+</html>

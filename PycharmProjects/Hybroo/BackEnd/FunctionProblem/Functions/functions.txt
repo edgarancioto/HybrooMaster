@@ -1,0 +1,40 @@
+Ackley Function;n-dimensional, continuous, multimodal, non-convex, differentiable;-a*exp(-b*sqrt(1/n*Sum(x[i]**2,(i,1,n))))-exp(1/n*Sum(cos(c*x[i]),(i,1,n)))+a+exp(1);{'a':'20','b':'0.2','c':'2*pi'};[-32,32];[0];0
+Ackley N. 2 Function;2-dimensional, non-separable, unimodal, convex, differentiable;-200*exp(-0.2*sqrt(x**2+y**2));None;[-32,32];[0];-200
+Ackley N. 3 Function;2-dimensional, non-separable, multimodal, non-convex, differentiable;-200*exp(-0.2*sqrt(x**2+y**2))+5*exp(cos(3*x)+sin(3*y));None;[-32,32];[0.68,-0.36];-195.629028238419
+Ackley N. 4 Function;n-dimensional, non-separable, multimodal, non-convex, differentiable;Sum(exp(-0.2)*sqrt(x[i]**2+x[i+1]**2)+3*(cos(2*x[i])+sin(2*x[i+1])),(i,1,n-1));None;[-35,35];[-1.51,-0.755];-4.590101633799122
+Adjiman Function;2-dimensional, non-separable, multimodal, non-convex, differentiable;cos(x)*sin(y)-(x/(y**2+1));None;[[-1,2],[-1,2]];[0,0];-2.02181
+Alpine N. 1 Function;n-dimensional, non-separable, multimodal, non-convex, differentiable;Sum(Abs(x[i]*sin(x[i])+0.1*x[i]),(i,1,n));None;[0,10];[0];0
+Bartels Conn Function;2-dimensional, non-separable, multimodal, non-convex, non-differentiable;Abs(x**2+y**2+x*y)+Abs(sin(x))+Abs(cos(y));None;[-500,500];[0];1
+Beale Function;2-dimensional, continuous, multimodal, non-convex;(1.5-x+x*y)**2+(2.25-x+(x*y)**2)**2+(2.625-x+(x*y)**3)**2;None;[-4.5,4.5];[3,0.5];0
+Bird Function;2-dimensional, non-separable, multimodal, non-convex, differentiable;sin(x)*exp(1-cos(y))**2+cos(y)*exp(1-sin(x))**2+(x-y)**2;None;[-2*pi,2*pi];[4.70104,3.15294];-106.764537
+Bohachevsky N. 1 Function;2-dimensional, continuous, convex, unimodal;x**2+2*y**2-0.3*cos(3*pi*x)-0.4*cos(4*pi*y)+0.7;None;[-100,100];[0];0
+Bohachevsky N. 2 Function;2-dimensional, non-separable, multimodal, non-convex, differentiable;x**2+2*y**2-0.3*cos(3*pi*x)*cos(4*pi*y)+0.3;None;[-100,100];[0];0
+Booth Function;2-dimensional, continuous, convex, differentiable, non-separable, unimodal, convex;(x+2*y-7)**2+(2*x+y-5)**2;None;[-10,10];[1,3];0
+Bukin N. 6 Function;2-dimensional, continuous, convex, non-differentiable, non-separable, multimodal, convex;100*sqrt(Abs(y-0.01*x**2))+0.01*Abs(x+10);None;[[-15,-5],[-3,3]];[-10,1];0
+Cross-in-Tray Function;2-dimensional, continuous, non-differentiable, non-separable, multimodal, non-convex;-0.0001*(Abs(sin(x)*sin(y)*exp(Abs(100-(sqrt(x**2+y**2)/pi))))+1)**0.1;None;[-10,10];[-1.349406685353340,-1.349406608602084];-2.06261218
+Deckkers-Aarts Function;2-dimensional, continuous, differentiable, non-separable, multimodal, non-convex;10**5*x**2+y**2-(x**2+y**2)**2+10**-5*(x**2+y**2)**4;None;[-20,20];[0,-15];-24777
+Drop-Wave Function;2-dimensional, continuous, unimodal, non-convex;-(1+cos(12*sqrt(x**2+y**2)))/(0.5*(x**2+y**2)+2);None;[-5.2,5.2];[0];-1
+Easom Function;2-dimensional, continuous, differentiable, separable, multimodal, non-convex;-cos(x)*cos(y)*exp(-(x-pi)**2-(y-pi)**2);None;[-100,100];[pi];-1
+Egg Crate Function;2-dimensional, continuous, differentiable, separable, multimodal, non-convex;x**2+y**2+25*((sin(x))**2+(sin(y))**2);None;[-5,5];[0];0
+Exponential Function;n-dimensional, continuous, differentiable, non-separable, unimodal, convex;-exp(-0.5*Sum(x[i]**2,(i,1,n)));None;[-1,1];[0];-1
+Goldstein-Price Function;2-dimensional, continuous, differentiable, non-separable, multimodal, non-convex;(1+((x+y+1)**2)*(19-14*x+3*x**2-14*y+6*x*y+3*y**2))*(30+((2*x-3*y)**2)*(18-32*x+(12*x**2)+48*y-36*x*y+27*y**2));None;[-2,2];[0,-1];3
+Gramacy & Lee Function;1-dimensional, continuous, multimodal, non-convex;(sin(10*pi*x)/2*x)+(x-1)**4;None;[0.5,2.5];[0.548563444114526];-0.869011134989500
+Himmelblau Function;2-dimensional, continuous, multimodal, non-convex; (x**2+y-11)**2+(x+y**2-7)**2;None;[-6,6];[[3,2],[-2.805118,3.283186],[-3.779310,-3.283186],[3.584458,-1.848126]];0
+Holder-Table Function;2-dimensional, continuous, non-differentiable, non-separable, multimodal, non-convex;-Abs(sin(x)*cos(y)*exp(Abs(1-sqrt(x**2+y**2)/pi)));None;[-10,10];[8.05502,9.66459];-19.2085
+Leon Function;2-dimensional, continuous, differentiable, non-separable, unimodal, non-convex;100*(y-x**3)**2+(1-x)**2;None;[0,10];[1];0
+Levi N. 13 Function;2-dimensional, continuous, differentiable, non-separable, multimodal, non-convex;sin(3*pi*x)**2+(x-1)**2*(1+sin(3*pi*y)**2)+(y-1)**2*(1+sin(2*pi*y)**2);None;[-10,10];[1];0
+Matyas Function;2-dimensional, continuous, differentiable, non-separable, unimodal, convex;0.26*(x**2+y**2)-0.48*x*y;None;[-10,10];[0];0
+McCormick Function;2-dimensional, continuous, differentiable, multimodal, non-scalable, convex;sin(x+y)+(x-y)**2-1.5*x+2.5*y+1;None;[-1.5,4];[-0.547,-1.547];-1.9133
+Periodic Function;n-dimensional, continuous, differentiable, non-separable, multimodal, non-convex;1+Sum(sin(x[i])**2,(i,1,n))-0.1*exp(Sum(x[i]**2,(i,1,n)));None;[-10,10];[0];0.9
+Powell Sum Function;n-dimensional, continuous, non-differentiable, separable, unimodal, convex;Sum(Abs(x[i])**(i+1),(i,1,n));None;[-1,1];[0];0
+Qing Function;n-dimensional, continuous, differentiable, non-separable, multimodal, non-convex;Sum((x[i]**2-i)**2,(i,1,n));None;[-500,500];[0];0
+Rastrigin Function;n-dimensional, continuous, differentiable, separable, multimodal, convex;10*n+Sum(x[i]**2-10*cos(2*pi*x[i]),(i,1,n));None;[-5.12,5.12];[0];0
+Rosenbrock Function;n-dimensional, continuous, differentiable, non-separable, multimodal, non-convex;Sum(100*(x[i+1]-x[i]**2)**2+(x[i]-1)**2,(i,1,n-1));None;[-30,30];[1];0
+Salomon Function;n-dimensional, continuous, differentiable, non-separable, multimodal, non-convex;1-cos(2*pi*sqrt(Sum(x[i]**2,(i,1,n))))+0.1*sqrt(Sum(x[i]**2,(i,1,n)));None;[-100,100];[0];0
+Schaffer N. 1 Function;2-dimensional, continuous, differentiable, non-separable, unimodal, non-convex;0.5+(sin(x**2+y**2)**2-0.5)/(1+0.001*(x**2+y**2))**2;None;[-100,100];[0];0
+Schaffer N. 3 Function;2-dimensional, continuous, differentiable, non-separable, unimodal, non-convex;0.5+(sin(cos(Abs(x**2-y**2)))**2-0.5)/(1+0.001*(x**2+y**2))**2;None;[-100,100];[0,1.253115];0.00156685
+Schaffer N. 4 Function;2-dimensional, continuous, differentiable, non-separable, unimodal, non-convex;0.5+(cos(sin(Abs(x**2-y**2)))**2-0.5)/(1+0.001*(x**2+y**2))**2;None;[-100,100];[0,1.253115];0.292579
+Schwefel 2.20 Function; n-dimensional, continuous, non-differentiable, separable, unimodal, convex;Sum(Abs(x[i]),(i,1,n));None;[-100,100];[0];0
+Sphere Function;n-dimensional, continuous, convex, differentiable, unimodal, separable;Sum(x[i]**2,(i,1,n));None;[-100,100];[0];0
+Zakharov Function;n-dimensional, continuous, convex, unimodal;Sum(x[i]**2,(i,1,n))+(Sum(0.5*i*x[i],(i,1,n)))**2+(Sum(0.5*i*x[i],(i,1,n)))**4;None;[-5,10];[0];0
+DeVilliers-Glasser 2 Function;5-dimensional, multimodal;Sum(x[1]*x[2]**(0.1*(i-1))*tanh(x[3]*(0.1*(i-1))+sin(x[4]*(0.1*(i-1))))*cos((0.1*(i-1))*exp(x[5]))-(53.81*(1.27**(0.1*(i-1)))*tanh(3.012*(0.1*(i-1))+sin(2.13*(0.1*(i-1))))*cos(exp(0.507)*(0.1*(i-1)))),(i,1,24))**2;None;[1,60];[53.81,1.27,3.012,2.13,0.507];0

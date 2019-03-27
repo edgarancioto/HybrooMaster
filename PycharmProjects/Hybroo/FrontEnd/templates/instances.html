@@ -1,0 +1,161 @@
+{% extends "header.html" %}
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/forms.css') }}">
+<script src="{{ url_for('static', filename='js/radio_choose.js') }}"></script>
+<script src="{{ url_for('static', filename='js/validate_form.js') }}"></script>
+
+<body onload="init_instance()">
+    <form class="main-form" action="/results" name='main-form' onsubmit="return validateForm()">
+
+        <div>
+            <input id="radio_type_of_problem_1" type="radio" name="type_of_problem" value="vrp" onchange="type_of_problem_change_instance()" checked="checked">
+            <label>VRP</label>
+            <input id="radio_type_of_problem_2" type="radio" name="type_of_problem" value="tsp" onchange="type_of_problem_change_instance()">
+            <label>TSP</label>
+        </div>
+        <hr>
+        <div>
+                <div id="vrp-list">
+                    <label>INSTANCE</label>
+                    <select name="instance_selected_vrp">
+                        <option disabled selected value> - select an option - </option>
+                        {% for id in vrp_names_list %}
+                            <option>{{id}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div id="tsp-list">
+                    <label>INSTANCE</label>
+                    <select name="instance_selected_tsp">
+                        <option disabled selected value> - select an option - </option>
+                        {% for id in tsp_names_list %}
+                            <option value="{{id}}">{{id}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        <hr>
+        <div>
+            <input id="radio_type_of_method_1" type="radio" name="type_of_method" value="single" onchange="type_of_method_change_instance()">
+            <label>SINGLE</label>
+            <input id="radio_type_of_method_2" type="radio" name="type_of_method" value="hybrid" onchange="type_of_method_change_instance()">
+            <label>HYBRID</label>
+        </div>
+        <hr>
+        <div class="half">
+            <div>
+                <select id="method-selected-1" name="method_selected_1" onchange="type_of_method_change_instance()">
+                    <option disabled selected value> - select an option - </option>
+                    <option>Ant Colony Optimization</option>
+                    <option>Genetic Algorithm</option>
+                    <option>Simulated Annealing</option>
+                </select>
+            </div>
+            <div>
+                <select id="method-selected-2" name="method_selected_2" onchange="type_of_method_change_instance()">
+                    <option disabled selected value> - select an option - </option>
+                    <option>Genetic Algorithm</option>
+                    <option>Simulated Annealing</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="half">
+            <div id="aco-panel">
+                <table>
+                    <tr>
+                        <td><label>Ants Count</label></td>
+                        <td><input type="number" name="ants_aco" min="0" step="1" value="100"></td>
+                    </tr><tr>
+                        <td><label>Generation Count</label></td>
+                        <td><input type="number" name="generation_aco" min="0" step="1" value="500"></td>
+                    </tr><tr>
+                        <td><label>Alpha</label></td>
+                        <td><input type="number" name="alpha_aco" min="0" step="0.01" value="0.8"></td>
+                    </tr><tr>
+                        <td><label>Beta</label></td>
+                        <td><input type="number" name="beta_aco" min="1" step="1" value="10"></td>
+                    </tr><tr>
+                        <td><label>RHO</label></td>
+                        <td><input type="number" name="rho_aco" min="0" step="0.01" value="0.3"></td>
+                    </tr><tr>
+                        <td><label>Q</label></td>
+                        <td><input type="number" name="q_aco" min="0" step="1" value="1"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="ga-tsp-panel">
+                <table>
+                    <tr>
+                        <td><label>Population Size</label></td>
+                        <td><input type="number" name="population_ga_tsp" min="0" step="1" value="50"></td>
+                    </tr><tr>
+                        <td><label>Generation Count</label></td>
+                        <td><input type="number" name="generation_ga_tsp" min="0" step="1" value="1000"></td>
+                    </tr><tr>
+                        <td><label>Crossover Rate</label></td>
+                        <td><input type="number" name="crossover_ga_tsp" min="0" step="0.01" value="0.8"></td>
+                    </tr><tr>
+                        <td><label>Simple Mutation Rate</label></td>
+                        <td><input type="number" name="simple_mutation_ga_tsp" min="0" step="0.01" value="0.1"></td>
+                    </tr><tr>
+                        <td><label>Inverse Mutation Rate</label></td>
+                        <td><input type="number" name="inverse_mutation_ga_tsp" min="0" step="0.01" value="0.8"></td>
+                    </tr><tr>
+                        <td><label>Elitism Rate</label></td>
+                        <td><input type="number" name="elitism_ga_tsp" min="0" step="0.01" value="0.15"></td>
+                    </tr><tr>
+                        <td><label>Special Individual</label></td>
+                        <td><input class="check-special-individual" type="checkbox" name="special_individual_ga_tsp" checked></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="ga-vrp-panel">
+                <table>
+                    <tr>
+                        <td><label>Population Size</label></td>
+                        <td><input type="number" name="population_ga_vrp" min="0" step="1" value="50"></td>
+                    </tr><tr>
+                        <td><label>Generation Count</label></td>
+                        <td><input type="number" name="generation_ga_vrp" min="0" step="1" value="1000"></td>
+                    </tr><tr>
+                        <td><label>Inverse Mutation Rate</label></td>
+                        <td><input type="number" name="inverse_mutation_ga_vrp" min="0" step="0.01" value="0.8"></td>
+                    </tr><tr>
+                        <td><label>Elitism Rate</label></td>
+                        <td><input type="number" name="elitism_ga_vrp" min="0" step="0.01" value="0.15"></td>
+                    </tr><tr>
+                        <td><label>Special Individual</label></td>
+                        <td><input type="checkbox" name="special_individual_ga_vrp" checked></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="sa-panel">
+                <table>
+                    <tr>
+                        <td><label>T</label></td>
+                        <td><input type="number" name="t_sa" min="0" step="1" value="10000"></td>
+                    </tr><tr>
+                       <td><label>Alpha</label></td>
+                        <td><input type="number" name="alpha_sa" min="0" step="0.0001" value="0.999"></td>
+                    </tr><tr>
+                        <td><label>Tolerance</label></td>
+                        <td><input type="number" name="tolerance_sa" min="1e-50" step="1e-10" value="1e-10"></td>
+                    </tr><tr>
+                        <td><label>Iterations</label></td>
+                        <td><input type="number" name="iter_sa" min="0" step="1" value="50000"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <input type="submit" name="submit_button" value="Simulation">
+        <input class="simulation-times" type="number" name="simulation_times" min="2" max="3000" step="1" value="50">
+        <input type="submit" name="submit_button" value="Execute Once">
+    </form>
+</body>
+{% endblock %}

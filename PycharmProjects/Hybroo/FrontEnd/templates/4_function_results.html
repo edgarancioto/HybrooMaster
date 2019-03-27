@@ -1,0 +1,111 @@
+{% extends "header.html" %}
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/results.css') }}">
+
+<body>
+    <div>
+        <img src="http://latex.codecogs.com/svg.latex?{{ function_info[8] }}" border="0"/>
+        <br><br>
+    </div>
+
+    <div class="third">
+        <div>
+            <label>Functions Information</label>
+            <table>
+                <tr>
+                    <td>Function:</td>
+                    <td>{{ function_info[0] }}</td>
+                </tr>
+                <tr>
+                    <td>Dimensions:</td>
+                    <td>{{ function_info[2] }}</td>
+                </tr>
+                <tr>
+                    <td>Location:</td>
+                    <td>{{ function_info[4] }}</td>
+                </tr>
+                <tr>
+                    <td>Best:</td>
+                    <td>{{ function_info[5] }}</td>
+                </tr>
+                <tr>
+                    <td>Description:</td>
+                    <td>{{ function_info[7] }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <label>3-dimensional Plot</label>
+            <object data="{{ url_for('static', filename='image/results/function3d.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+        <div>
+            <label>Contour Plot</label>
+            <object data="{{ url_for('static', filename='image/results/function_contour.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+    </div>
+
+    {% if type_method=='hybrid' %}
+    <div>
+        <label>The Hybrid Solution</label>
+    </div>
+    <div class="half">
+        <div>
+            <p><label>{{ methods[0] }}</label></p>
+            <p><label>Best Solution: {{ '%.3f'%func_value[0] }} solved in {{ '%.3f'%times[0] }} seconds</label></p>
+            <p><label>Best Point: {{ real_values[0] }}</label></p>
+            <object data="{{ url_for('static', filename='image/results/err_1.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+
+        <div>
+            <p><label>{{ methods[1] }}</label></p>
+            <p><label>Best Solution: {{ '%.3f'%func_value[1] }} solved in {{ '%.3f'%times[1] }} seconds</label></p>
+            <p><label>Best Point: {{ real_values[1] }}</label></p>
+            <object data="{{ url_for('static', filename='image/results/err_2.png') }}" type="image/png">
+                <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+            </object>
+        </div>
+    </div>
+
+    <div>
+        <label>Analysis of Hybridization</label>
+        <p><label>
+                The {{ methods[0] }} hit the value {{ '%.2f'%func_value[0] }} in {{ '%.3f'%times[0] }} seconds.
+                Starting on the best found value, the {{ methods[1] }}
+                {% if func_value[0]-func_value[1] > 0.1 %}
+                got a improve {{ '%.2f'%(func_value[0]-func_value[1]) }} in the solution, in {{ '%.3f'%times[1] }} seconds.
+                Hybridization reached a value of {{ '%.3f'%func_value[1] }} in a total of {{ '%.3f'%(times[0]+times[1]) }} seconds,
+                considered a effective result, because one method support the other.
+                {% else %}
+                    remained in the same. Hybridization, in this case, was consider unnecessary, because one method not support the other.
+                {% endif %}
+        </label></p>
+    </div>
+
+    <div>
+        <object data="{{ url_for('static', filename='image/results/result_err_hybrid.png') }}" type="image/png">
+            <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+        </object>
+    </div>
+
+    {% else %}
+    <div>
+        <label>The Single Solution - {{ methods }}</label>
+    </div>
+    <div>
+        <p><label>Best Solution: {{ '%.3f'%func_value }} solved in {{ '%.3f'%times }} seconds</label></p>
+        <p><label>Best Point: {{ real_values }}</label></p>
+        <object data="{{ url_for('static', filename='image/results/err_1.png') }}" type="image/png">
+            <img class="fail" src="{{ url_for('static', filename='image/fail.png') }}">
+        </object>
+    </div>
+    {% endif %}
+</body>
+{% endblock %}
