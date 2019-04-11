@@ -1,0 +1,23 @@
+{% extends "header.html" %}
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/forms.css') }}">
+
+<body>
+    <form class="main-form" action="/calling_function">
+        <div id="benchmark-panel">
+            <div id="func-list">
+                <label>FUNCTIONS</label>
+                <select name="function_selected">
+                    <option disabled selected value> - select an option - </option>
+                    {% for id in function_names %}
+                        <option>{{id}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+        <input type="submit" name="submit_button" value="Next">
+    </form>
+</body>
+{% endblock %}

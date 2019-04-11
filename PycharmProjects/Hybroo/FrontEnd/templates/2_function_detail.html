@@ -5,7 +5,7 @@
     <script src="{{ url_for('static', filename='js/radio_choose_inform_function.js') }}"></script>
 </head>
 <body onload="inform_function()">
-    <form class="main-form" action="/validate_function_details">
+    <form class="main-form" action="/function_methods">
         <div class="function-info">
             <p>Functions Information</p>
             <table>
@@ -65,6 +65,8 @@
             </p>
         </div>
         {% endif %}
+        <input type="hidden" name="function_name" value="{{ function_info[0] }}">
+        <input type="hidden" name="function_latex" value="{{ function_info[8] }}">
         <input type="submit" name="submit_button" value="Next">
     </form>
 </body>

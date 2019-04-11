@@ -25,8 +25,8 @@ def get_app():
     def home():
         return render_template('index.html')
 
-    @app.route('/function_modeling')
-    def function_modeling():
+    @app.route('/functions')
+    def functions():
         function_names = []
         with open(os.path.dirname(__file__) + "/" + os.pardir + "/BackEnd/FunctionProblem/Functions/functions.txt") as f:
             while True:
@@ -34,84 +34,82 @@ def get_app():
                 if line == "":
                     break
                 function_names.append(line.split(';')[0])
-        return render_template('1_function_modeling.html', function_names=function_names)
+        return render_template('1_functions.html', function_names=function_names)
 
-    @app.route('/validate_function_modeling', methods=['GET'])
-    def validate_function_modeling():
-        global function_selected_object, function_mode, function_info
-        args = {}
-        for key in request.args:
-            args[key] = request.args.get(key)
+    @app.route('/calling_function')
+    def calling_function():
         try:
-            function_selected_name = args['function_selected']
+            function_selected = request.args.get('function_selected')
         except KeyError:
             flash('A function must be selected!')
-            return redirect(url_for('.function_modeling'))
-        if args['type_function'] == 'benchmark':
-            function_mode = 'benchmark'
-            with open(os.path.dirname(__file__) + "/" + os.pardir + "/BackEnd/FunctionProblem/Functions/functions.txt") as f:
-                while True:
-                    line = f.readline()
-                    if line == "":
-                        break
-                    if line.startswith(function_selected_name):
-                        function_selected_object = FUNCTION.Function()
-                        function_selected_object.build_function(line)
-                        function_info = [function_selected_object.name, function_selected_object.expr_original, function_selected_object.dimensions,
-                                         function_selected_object.domain, function_selected_object.location, function_selected_object.best, function_selected_object.constants,
-                                         function_selected_object.descriptions, function_selected_object.get_format_expression()]
-                        return redirect(url_for('.function_details'))
+            return redirect(url_for('.functions'))
+        return redirect(url_for('.function_details', function_selected=function_selected))
 
     @app.route('/function_details')
     def function_details():
-        if function_mode == 'benchmark':
-            return render_template('2_function_detail.html', function_info=function_info)
-
-    @app.route('/validate_function_details', methods=['GET'])
-    def validate_function_details():
-        args = {}
-        for key in request.args:
-            args[key] = request.args.get(key)
-        try:
-            function_selected_dimensions = int(args['dimensions'])
-            function_selected_object.set_n_dimension(function_selected_dimensions)
-        except ValueError:
-            flash('The dimensions of function must be informed!')
-            return redirect(url_for('.function_details'))
-        except KeyError:
-            pass
-        return redirect(url_for('.function_methods'))
+        function_selected = request.args.get('function_selected')
+        function_selected_object = None
+        with open(os.path.dirname(__file__) + "/" + os.pardir + "/BackEnd/FunctionProblem/Functions/functions.txt") as f:
+            while True:
+                line = f.readline()
+                if line == "":
+                    break
+                if line.startswith(function_selected):
+                    function_selected_object = FUNCTION.Function()
+                    function_selected_object.build_function(line)
+        function_info = [function_selected_object.name, function_selected_object.expr_original, function_selected_object.dimensions, function_selected_object.domain, function_selected_object.location, function_selected_object.best, function_selected_object.constants, function_selected_object.descriptions, function_selected_object.get_format_expression()]
+        return render_template('2_function_detail.html', function_info=function_info)
 
     @app.route('/function_methods')
     def function_methods():
-        return render_template('3_function_methods.html', function_format_expr=function_info[8])
-
-    @app.route('/validate_function_methods', methods=['GET'])
-    def validate_function_methods():
-        args = {}
-        for key in request.args:
-            args[key] = request.args.get(key)
-        if not controller_backend.validate_parameters_function(args):
-            flash('Every value must be informed!')
-            return redirect(url_for('.function_methods'))
-
-        if args['submit_button'] == 'Execute Once':
-            return redirect(url_for('.function_results'))
-        else:
-            # this comment need to be switch to real function of system
-            Thread(target=controller_backend.controller_simulate_function_method, args=[function_selected_object]).start()
-            # Thread(target=controller_backend.controller_repetition_function_method, args=[function_selected_object]).start()
-            return redirect(url_for('.simulation_functions'))
+        try:
+            dimensions = int(request.args.get('dimensions'))
+            return render_template('3_function_methods.html', function_latex=request.args['function_latex'], dimensions=dimensions, function_name=request.args['function_name'])
+        except ValueError:
+            flash('The dimensions of function must be informed!')
+            return redirect(url_for('.functions'))
+        except KeyError:
+            pass
 
     @app.route('/function_results')
     def function_results():
-        try:
-            type_method, methods, times, real_values, func_value = controller_backend.controller_execute_function(function_selected_object)
-        except Exception as e:
-            flash('Error in proceedings the system was restarted!'+str(e))
-            return redirect(url_for('.reload'))
-        return render_template('4_function_results.html', function_info=function_info, type_method=type_method, methods=methods, times=times, real_values=real_values,
-                               func_value=func_value)
+        args = {}
+        for key in request.args:
+            args[key] = request.args.get(key)
+            print(key, args[key])
+
+        if not controller_backend.validate_parameters_function(args):
+            flash('Every value must be informed!')
+            return redirect(url_for('.functions'))
+
+        function_selected_object, function_info = None, None
+
+        with open(os.path.dirname(__file__) + "/" + os.pardir + "/BackEnd/FunctionProblem/Functions/functions.txt") as f:
+            while True:
+                line = f.readline()
+                if line == "":
+                    break
+                if line.startswith(args['function_name']):
+                    try:
+                        function_selected_object = FUNCTION.Function()
+                        function_selected_object.build_function(line)
+                        function_selected_object.set_n_dimension(args['dimensions'])
+                        function_info = [function_selected_object.name, function_selected_object.expr_original, function_selected_object.dimensions, function_selected_object.domain, function_selected_object.location, function_selected_object.best, function_selected_object.constants, function_selected_object.descriptions, function_selected_object.get_format_expression()]
+                    except Exception:
+                        flash('Every value must be informed!')
+                        return redirect(url_for('.functions'))
+
+        if args['submit_button'] == 'Execute Once':
+            try:
+                type_method, methods, times, real_values, func_value = controller_backend.controller_execute_function(function_selected_object)
+            except Exception as e:
+                flash('Error in proceedings the system was restarted!'+str(e))
+                return redirect(url_for('.reload'))
+            return render_template('4_function_results.html', function_info=function_info, type_method=type_method, methods=methods, times=times, real_values=real_values,
+                                   func_value=func_value)
+        else:
+            Thread(target=controller_backend.controller_simulate_function_method, args=[function_selected_object]).start()
+            return redirect(url_for('.simulation_functions'))
 
     @app.route('/simulation_functions')
     def simulation_functions():

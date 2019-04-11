@@ -5,9 +5,9 @@
     <script src="{{ url_for('static', filename='js/radio_choose.js') }}"></script>
 </head>
 <body onload="type_of_method_change_function()">
-    <form class="main-form" action="/validate_function_methods">
+    <form class="main-form" action="/function_results">
         <div class="img-function">
-            <img src="http://latex.codecogs.com/svg.latex?{{ function_format_expr }}" border="0"/>
+            <img src="http://latex.codecogs.com/svg.latex?{{ function_latex }}" border="0"/>
         </div>
         <hr>
 
@@ -76,6 +76,9 @@
                 </table>
             </div>
         </div>
+
+        <input type="hidden" name="function_name" value="{{ function_name }}">
+        <input type="hidden" name="dimensions" value="{{ dimensions }}">
 
         <input type="submit" name="submit_button" value="Simulation">
         <input class="simulation-times" type="number" name="simulation_times" min="2" step="1" value="50">

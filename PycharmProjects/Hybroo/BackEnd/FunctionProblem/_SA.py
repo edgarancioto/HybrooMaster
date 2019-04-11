@@ -28,7 +28,7 @@ class SA(object):
             self.current_solution = self.random_initial_solution()
         else:
             self.current_solution = Solution(self.function_problem, self.hybrid_individual)
-            self.T = log(self.current_solution.func_value)
+            #self.T = log(self.current_solution.func_value)
 
         self.solution_list.append(self.current_solution)
         self.best_solution = self.current_solution
